@@ -8,3 +8,5 @@ https://medium.com/@mancusoa74/how-to-program-the-attiny13a-with-arduino-nano-b5
 https://mcudude.github.io/MicroCore/package_MCUdude_MicroCore_index.json
 
 https://github.com/MCUdude/MicroCore
+
+mod
