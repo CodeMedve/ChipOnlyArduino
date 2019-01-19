@@ -1,0 +1,84 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+
+menu.cpu=Processor
+menu.BORL=Brown-Out Reset voltage
+
+##############################################################
+
+chiponly.name=Arduino Chip Only
+
+chiponly.upload.tool=arduino:avrdude
+chiponly.upload.protocol=arduino
+chiponly.upload.speed=57600
+
+
+chiponly.bootloader.tool=arduino:avrdude
+chiponly.bootloader.low_fuses=0xE2
+chiponly.bootloader.unlock_bits=0x3F
+chiponly.bootloader.lock_bits=0x0F
+
+chiponly.build.f_cpu=8000000L
+chiponly.build.board=AVR_NANO
+chiponly.build.core=arduino:arduino
+chiponly.build.variant=arduino:eightanaloginputs
+
+
+## Arduino Chip only Arduino w/ ATmega328P
+## ----------------------------------------------
+chiponly.menu.cpu.atmega328=ATmega328P at 8MHz
+
+chiponly.menu.cpu.atmega328.build.mcu=atmega328p
+chiponly.menu.cpu.atmega328.upload.maximum_size=30720
+chiponly.menu.cpu.atmega328.upload.maximum_data_size=2048
+
+chiponly.menu.cpu.atmega328.bootloader.high_fuses=0xDA
+chiponly.menu.cpu.atmega328.bootloader.file=atmega\ATmegaBOOT_168_atmega328_pro_8MHz.hex
+
+
+chiponly.menu.BORL.43=4.3V
+chiponly.menu.BORL.43.bootloader.extended_fuses=0x04
+
+chiponly.menu.BORL.27=2.7V
+chiponly.menu.BORL.27.bootloader.extended_fuses=0x05
+
+chiponly.menu.BORL.18=1.8V
+chiponly.menu.BORL.18.bootloader.extended_fuses=0x06
+
+chiponly.menu.BORL.DIS=BOR disabled
+chiponly.menu.BORL.DIS.bootloader.extended_fuses=0x07
+
+
+
+## Arduino Chip only Arduino w/ ATmega168
+## ----------------------------------------------
+#chiponly.menu.cpu.atmega168=ATmega168
+
+#chiponly.menu.cpu.atmega168.build.mcu=atmega168
+#chiponly.menu.cpu.atmega168.upload.maximum_size=14336
+#chiponly.menu.cpu.atmega168.upload.maximum_data_size=1024
+
+
+#chiponly.menu.cpu.atmega168.menu.BORL.43=4.3V
+#chiponly.menu.cpu.atmega168.menu.BORL.43.bootloader.extended_fuses=0x04	#BOR 4.3V
+
+#chiponly.menu.cpu.atmega168.menu.BORL.27=2.7V
+#chiponly.menu.cpu.atmega168.menu.BORL.27.bootloader.extended_fuses=0x05	#BOR 2.7V
+
+#chiponly.menu.cpu.atmega168.menu.BORL.18=1.8V
+#chiponly.menu.cpu.atmega168.menu.BORL.18.bootloader.extended_fuses=0x06	#BOR 1.8V
+
+#chiponly.menu.cpu.atmega168.bootloader.high_fuses=0xDA
+#chiponly.menu.cpu.atmega168.bootloader.file=atmega\ATmegaBOOT_168_pro_8MHz.hex
+
+
+
+
+
+
+
+
+
+
+
+

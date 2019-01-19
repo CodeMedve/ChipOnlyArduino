@@ -1,0 +1,44 @@
+{
+  "packages": [
+    {
+      "name": "Adruino Chip Only",
+      "maintainer": "CodeMedve",
+      "websiteURL": "",
+      "email": "codemedve@gmail.com",
+      "help": {
+        "online": "https://github.com/CodeMedve/ChipOnlyArduino/"
+      },
+      "platforms": [
+        {
+          "name": "Adruino Chip Only",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "Adruino Chip Only",
+          "help": {
+            "online": "https://github.com/CodeMedve/ChipOnlyArduino/"
+          },
+          "url": "",
+          "archiveFileName": "",
+          "checksum": "",
+          "size": "",
+          "boards": [
+            {"name": "Adruino Chip Only"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "4.8.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
+            }
+          ]
+        },
+      ],
+      "tools": []
+    }
+  ]
+}
